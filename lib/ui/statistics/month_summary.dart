@@ -27,6 +27,7 @@ class MonthExpenses extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.all(8.0).copyWith(bottom: 0.0),
           child: Card(
+            color: Colors.black,
             child: StreamBuilder<QuerySnapshot>(
               stream: vm.database.snapshotBetween(vm.start, vm.end),
               builder: (context, snapshot) {

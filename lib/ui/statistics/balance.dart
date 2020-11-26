@@ -23,6 +23,7 @@ class BalanceCard extends StatelessWidget {
       converter: _ViewModel.fromState,
       builder: (context, vm) {
         return Card(
+          color: Colors.black,
           child: StreamBuilder<QuerySnapshot>(
             stream: vm.database.snapshotBetween(from, to),
             builder: (context, snapshot) {
@@ -82,7 +83,7 @@ Widget summary(BuildContext context, String text, double amount) => Padding(
             text,
             style: Theme.of(context).textTheme.bodyText2.copyWith(
                   fontSize: 14.0,
-                  color: Palette.dimBlueGrey,
+                  color: Colors.lightGreenAccent,
                 ),
           ),
           Text(

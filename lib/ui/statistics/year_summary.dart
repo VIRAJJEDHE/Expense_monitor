@@ -29,6 +29,7 @@ class YearExpenses extends StatelessWidget {
           converter: _ViewModel.fromState,
           builder: (BuildContext context, _ViewModel vm) {
             return Card(
+              color: Colors.black,
               child: StreamBuilder<QuerySnapshot>(
                 stream: vm.database.snapshotBetween(from, to),
                 builder: (context, snapshot) {

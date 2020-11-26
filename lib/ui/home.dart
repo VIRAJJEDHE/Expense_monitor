@@ -44,7 +44,7 @@ class HomePageState extends State<HomePage>
       key: _scaffoldKey,
       backgroundColor: Colors.grey[700],
       appBar: AppBar(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Colors.indigo[700],
         centerTitle: true,
         title: Text('Expense Monitor', style: TextStyle(color: Colors.amber)),
       ),
