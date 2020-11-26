@@ -46,7 +46,7 @@ class HomePageState extends State<HomePage>
       appBar: AppBar(
         backgroundColor: Theme.of(context).backgroundColor,
         centerTitle: true,
-        title: Text('Expense Monitor'),
+        title: Text('Expense Monitor', style: TextStyle(color: Colors.amber)),
       ),
       body: TabBarView(
         controller: _tabController,

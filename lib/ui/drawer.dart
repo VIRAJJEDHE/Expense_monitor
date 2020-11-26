@@ -27,7 +27,11 @@ class HomeDrawer extends StatelessWidget {
                 Container(
                   height: 140.0,
                   child: DrawerHeader(
-                    child: Center(child: Text(vm.email, style: emailStyle)),
+                    child: Center(
+                        child: Text(
+                      vm.email,
+                      style: emailStyle,
+                    )),
                     decoration: BoxDecoration(
                       color: Theme.of(context).backgroundColor,
                     ),
