@@ -22,7 +22,7 @@ class DaySummaryTile extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .bodyText2
-                  .copyWith(fontSize: 12.0, color: Palette.dimBlueGrey),
+                  .copyWith(fontSize: 12.0, color: Colors.lightGreenAccent),
             ),
           ),
           VisualizedAmount(
@@ -31,7 +31,7 @@ class DaySummaryTile extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .bodyText2
-                .copyWith(fontSize: 12.0, color: Palette.dimBlueGrey),
+                .copyWith(fontSize: 12.0, color: Colors.lightGreenAccent),
           ),
         ],
       ),
