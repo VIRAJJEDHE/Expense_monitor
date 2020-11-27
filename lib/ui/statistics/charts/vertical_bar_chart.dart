@@ -79,7 +79,6 @@ class ClickableVerticalBar extends StatelessWidget {
   }) {
     final heightPercentage = entry.amount / maxAmount;
     final amount = entry.amount.toStringAsFixed(2);
-    // fixme: a hack to prevent expansion of stats card
     final textSize = amount.length * HEIGHT_PER_CHARACTER;
 
     return ClickableVerticalBar._(

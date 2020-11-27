@@ -22,9 +22,7 @@ class CategoryList extends StatelessWidget {
             centerTitle: true,
             title: Text('Categories'),
           ),
-          body:
-              //backgroundColor: Colors.black,
-              Scrollbar(
+          body: Scrollbar(
             child: ListView(
               physics: BouncingScrollPhysics(),
               shrinkWrap: true,

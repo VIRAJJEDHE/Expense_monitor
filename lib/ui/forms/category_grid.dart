@@ -89,7 +89,6 @@ class _ViewModel {
     return _ViewModel(state: store.state);
   }
 
-  /// A hack since [StoreConnector] does not update on type change.
   Set<Category> categories(CategoryType type) {
     return type == CategoryType.INCOME
         ? getIncomeCategories(state)
