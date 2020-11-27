@@ -4,8 +4,6 @@ import 'icons.dart';
 
 final appTheme = ThemeData(
   brightness: Brightness.dark,
-  // darkTheme: ThemeData.dark(),
-  //backgroundColor: Colors.indigo[900],
   iconTheme: IconThemeData(
     size: ICON_SIZE,
   ),
