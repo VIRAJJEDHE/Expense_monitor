@@ -15,8 +15,6 @@ const MONTHS_IN_YEAR = 12;
 AppState reduce(AppState state, dynamic action) {
   switch (action.runtimeType) {
     case DeleteEntry:
-      // a hack that fixes flickering of entry upon its removal.
-      // TODO: Why does returning new state cause a flicker?
       state.removed.add(action.entry);
       return state;
 

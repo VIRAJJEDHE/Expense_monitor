@@ -25,11 +25,7 @@ class AuthMiddleware extends MiddlewareClass<AppState> {
           .catchError((e) => store.dispatch(ReportAuthenticationError(e.code)));
     } else if (action is SignOut) {
       navigatorKey.currentState.pushReplacementNamed(InitialPage.route);
-      // HACK: I could not find a way to ensure that all streams to Firestore
-      // are closed before user is signed out. It seems that after replacing a
-      // route, the old one is still active for some time and is still receiving
-      // events from Firestore, which result in permission denied exceptions.
-      // Hence, we need to wait a little bit until old widget is disposed of.
+
       await Future.delayed(Duration(milliseconds: 1000))
           .then((_) => store.dispatch(SetUserDetails(id: "", email: "")))
           .then((_) => auth.signOut());

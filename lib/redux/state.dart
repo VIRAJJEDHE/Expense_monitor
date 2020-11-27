@@ -20,7 +20,6 @@ class AppState {
   final String authenticationErrorMessage;
   final List<Entry> removed;
   final Set<Category> categories;
-  // TODO: must be at least one default category
   final bool areCategoriesLoading;
   final Set<Color> availableColors;
   final DoubleLinkedQueueEntry<DateTime> selectedMonth;

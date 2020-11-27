@@ -12,7 +12,6 @@ class DecimalInputFormatter implements TextInputFormatter {
     }
   }
 
-  // TODO: probably better handled by regex
   bool isValid(String value) {
     if (value == '') {
       return true;
